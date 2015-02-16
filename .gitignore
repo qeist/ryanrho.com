@@ -32,3 +32,5 @@ node_modules
 .eslintrc
 .jscsrc
 .jshintrc
+
+public
