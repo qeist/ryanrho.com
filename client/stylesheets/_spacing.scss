@@ -2,6 +2,7 @@ $spacing-tiny: 8px;
 $spacing-small: $spacing-tiny * 2;
 $spacing: $spacing-small * 2;
 $spacing-large: $spacing + $spacing-small;
+$spacing-huge: $spacing * 2;
 
 .padding {
   padding: $spacing;
@@ -11,9 +12,19 @@ $spacing-large: $spacing + $spacing-small;
   padding: $spacing-large;
 }
 
+.padding--ends {
+  padding-top: $spacing;
+  padding-bottom: $spacing;
+}
+
 .padding-large--ends {
   padding-top: $spacing-large;
   padding-bottom: $spacing-large;
+}
+
+.padding-huge--ends {
+  padding-top: $spacing-huge;
+  padding-bottom: $spacing-huge;
 }
 
 .margin--sides {

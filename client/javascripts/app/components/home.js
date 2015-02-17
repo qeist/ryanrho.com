@@ -35,7 +35,7 @@ module.exports = React.createClass({
         ]),
 
         r.div({className: 'content padding-large'}, [
-          r.div({className: 'content__intro center-block'}, [
+          r.div({className: 'content__intro center-block padding--ends'}, [
             r.p('Ryan (a.k.a Yongseok, and 노용석) is a seasoned software engineer ' +
                 'with diverse technical skills and work experiences at startups, ' +
                 'research company, and corporations. He\'s currently working at Uber in San Francisco.'),
