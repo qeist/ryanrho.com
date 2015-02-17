@@ -1,20 +1,22 @@
 'use strict';
 
-let React = require('react');
-let r = require('r-dom');
+require('babel/register');
 
-let ReactHtml = require('./client/javascripts/app/html');
-let ReactHome = require('./client/javascripts/app/components/home');
+var React = require('react');
+var r = require('r-dom');
 
-let express = require('express');
-let app = express();
+var ReactHtml = require('./client/javascripts/app/html');
+var ReactHome = require('./client/javascripts/app/components/home');
+
+var express = require('express');
+var app = express();
 
 app.set('port', (5000));
-app.use(express.static(`${__dirname}/public`));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function getRoot(request, response) {
 
-  let html = React.renderToStaticMarkup(r(ReactHtml, {
+  var html = React.renderToStaticMarkup(r(ReactHtml, {
     markup: React.renderToString(r(ReactHome))
   }));
 
@@ -22,6 +24,6 @@ app.get('/', function getRoot(request, response) {
 });
 
 app.listen(app.get('port'), function openPort() {
-  let port = app.get('port');
-  console.log(`Node app is running at localhost: ${port}`);
+  var port = app.get('port');
+  console.log('Node app is running at localhost: ' + port);
 });
