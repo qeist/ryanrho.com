@@ -4,9 +4,10 @@
   "description": "A simple web app, probably an overkill yet fun, for ryanrho.com",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
+    "start": "node index.js",
     "lint": "lint-trap",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "build": "gulp build"
   },
   "dependencies": {
     "express": "~4.9.x",
