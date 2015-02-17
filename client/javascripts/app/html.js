@@ -16,7 +16,10 @@ module.exports = React.createClass({
       r.html([
         r.head([
           r.meta({charSet: 'utf-8'}),
-          r.meta({name: 'viewport', content: 'width=device-width, user-scalable=no'}),
+          r.meta({
+            name: 'viewport',
+            content: 'width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no'
+          }),
           r.title('Ryan Rho'),
           r.link({rel: 'stylesheet', href: '/style.css'})
         ]),

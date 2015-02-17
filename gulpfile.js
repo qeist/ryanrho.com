@@ -28,7 +28,12 @@ gulp.task('build-client-js', function buildClientJs() {
       .pipe(gulp.dest('./public'));
 });
 
-gulp.task('watch', ['build-sass', 'build-client-js'], function watchFiles() {
+gulp.task('copy-fonts', function copyFonts() {
+  gulp.src('node_modules/font-awesome/fonts/*.*')
+      .pipe(gulp.dest('./public/fonts'));
+});
+
+gulp.task('watch', ['copy-fonts', 'build-sass', 'build-client-js'], function watchFiles() {
 
   gulp.watch('client/stylesheets/**/*.scss', ['build-sass']);
   gulp.watch('client/javascripts/**/*.js', ['build-client-js']);

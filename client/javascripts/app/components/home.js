@@ -8,6 +8,9 @@ module.exports = React.createClass({
   displayName: 'Home',
 
   render() {
-    return r.div('hello world!');
+    return r.div({className: 'container'}, [
+      r.h1({className: 'text-center'}, 'Ryan Rho'),
+      r.i({className: 'fa fa-bed'})
+    ]);
   }
 });

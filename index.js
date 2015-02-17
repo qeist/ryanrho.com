@@ -18,7 +18,7 @@ app.get('/', function getRoot(request, response) {
     markup: React.renderToString(r(ReactHome))
   }));
 
-  response.send(html);
+  response.send('<!DOCTYPE html>' + html);
 });
 
 app.listen(app.get('port'), function openPort() {
