@@ -1,6 +1,27 @@
-$white: #ffffff;
+$white: #FFFFFF;
+$gray: #AAAAAA;
+
+$primary-color: #6B4746;
+$secondary-color: #8E9142;
+$tertiary-color: #A7AA56;
 
 body {
-  background: rgb(52, 75, 94);
+  background: $primary-color;
   color: $white;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+.fa {
+  font-size: 80px;
+}
+
+a, a:active, a:visited {
+  color: $white;
+}
+
+a:hover {
+  color: $gray;
 }
