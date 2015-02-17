@@ -4,13 +4,16 @@
   "description": "A simple web app, probably an overkill yet fun, for ryanrho.com",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "babel-node index.js",
     "lint": "lint-trap",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "babel-node": "babel-node"
   },
   "dependencies": {
+    "babel": "^4.0.2",
     "express": "~4.9.x",
     "global": "^4.3.0",
+    "gulp-babel": "^4.0.0",
     "gulp-browserify": "^0.5.1",
     "gulp-nodemon": "^1.0.5",
     "gulp-rename": "^1.2.0",

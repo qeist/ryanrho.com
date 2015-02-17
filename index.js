@@ -1,5 +1,6 @@
 'use strict';
 
+require('babel/register');
 var express = require('express');
 
 var app = express();
@@ -12,5 +13,6 @@ app.get('/', function getRoot(request, response) {
 });
 
 app.listen(app.get('port'), function openPort() {
-  console.log('Node app is running at localhost:' + app.get('port'));
+  var port = app.get('port');
+  console.log(`Node app is running at localhost: ${port}`);
 });

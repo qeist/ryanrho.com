@@ -2,10 +2,11 @@
 
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
+var nodemon = require('gulp-nodemon');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
+var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
-var nodemon = require('gulp-nodemon');
 var util = require('gulp-util');
 
 gulp.task('default', ['watch']);
@@ -21,6 +22,7 @@ gulp.task('build-sass', function buildSass() {
 
 gulp.task('build-client-js', function buildClientJs() {
   gulp.src('client/javascripts/main.js')
+      .pipe(babel())
       .pipe(browserify())
       .pipe(rename('script.js'))
       .pipe(uglify())
@@ -34,11 +36,12 @@ gulp.task('watch', function watchFiles() {
 
   nodemon({
     script: 'index.js',
-    ext: 'html js',
-    ignore: ['./public/**']
+    ext: 'js',
+    ignore: ['./public/**'],
+    execMap: {
+      js: 'babel-node'
+    }
   }).on('restart', function onServerRestart() {
       util.log('server restarted');
     });
 });
-
-// TODO: 6-to-5 JS
