@@ -3,8 +3,6 @@
 var React = require('react');
 var r = require('r-dom');
 
-var Home = require('./components/home');
-
 module.exports = React.createClass({
 
   displayName: 'HTML',
@@ -19,7 +17,7 @@ module.exports = React.createClass({
         r.head([
           r.meta({charSet: 'utf-8'}),
           r.meta({name: 'viewport', content: 'width=device-width, user-scalable=no'}),
-          r.title(['Ryan Rho']),
+          r.title('Ryan Rho'),
           r.link({rel: 'stylesheet', href: '/style.css'})
         ]),
 

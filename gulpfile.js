@@ -1,21 +1,21 @@
 'use strict';
 
-var gulp = require('gulp');
+var babel = require('gulp-babel');
 var browserify = require('gulp-browserify');
+var gulp = require('gulp');
+var minifyCss = require('gulp-minify-css');
 var nodemon = require('gulp-nodemon');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
-var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var util = require('gulp-util');
 
 gulp.task('default', ['watch']);
 
-// TODO: gulp-minify-css
-
 gulp.task('build-sass', function buildSass() {
   gulp.src('client/stylesheets/main.scss')
       .pipe(sass())
+      .pipe(minifyCss())
       .pipe(rename('style.css'))
       .pipe(gulp.dest('./public'));
 });
@@ -30,18 +30,16 @@ gulp.task('build-client-js', function buildClientJs() {
 });
 
 gulp.task('watch', ['build-sass', 'build-client-js'], function watchFiles() {
+
   gulp.watch('client/stylesheets/**/*.scss', ['build-sass']);
   gulp.watch('client/javascripts/**/*.js', ['build-client-js']);
-  gulp.watch('index.js');
 
   nodemon({
     script: 'index.js',
-    ext: 'js',
+    ext: 'js scss',
     ignore: ['./public/**'],
-    execMap: {
-      js: 'babel-node'
-    }
-  }).on('restart', function onServerRestart() {
-      util.log('server restarted');
-    });
+    execMap: {js: 'babel-node'}
+  }).on('restart', function onRestart() {
+    util.log('server restarted.');
+  });
 });
