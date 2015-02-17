@@ -1,6 +1,6 @@
 'use strict';
 
-var babel = require('gulp-babel');
+var babelify = require('babelify');
 var browserify = require('gulp-browserify');
 var gulp = require('gulp');
 var minifyCss = require('gulp-minify-css');
@@ -22,8 +22,7 @@ gulp.task('build-sass', function buildSass() {
 
 gulp.task('build-client-js', function buildClientJs() {
   gulp.src('client/javascripts/main.js')
-      .pipe(babel())
-      .pipe(browserify())
+      .pipe(browserify({transform: babelify}))
       .pipe(rename('script.js'))
       .pipe(uglify())
       .pipe(gulp.dest('./public'));

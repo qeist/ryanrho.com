@@ -1,14 +1,14 @@
 'use strict';
 
-var global = require('global');
-var document = require('global/document');
+let global = require('global');
+let document = require('global/document');
 
-var React = require('react');
-var r = require('r-dom');
+let React = require('react');
+let r = require('r-dom');
 
-var Home = require('./app/components/home');
+let Home = require('./app/components/home');
 
-var mountNode = document.getElementById('app');
+let mountNode = document.getElementById('app');
 React.render(r(Home), mountNode);
 
 global.React = React;

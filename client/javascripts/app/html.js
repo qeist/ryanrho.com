@@ -1,7 +1,7 @@
 'use strict';
 
-var React = require('react');
-var r = require('r-dom');
+let React = require('react');
+let r = require('r-dom');
 
 module.exports = React.createClass({
 
@@ -11,7 +11,7 @@ module.exports = React.createClass({
     markup: React.PropTypes.string.isRequired
   },
 
-  render: function render() {
+  render() {
     return (
       r.html([
         r.head([
