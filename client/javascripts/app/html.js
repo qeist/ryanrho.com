@@ -3,9 +3,15 @@
 var React = require('react');
 var r = require('r-dom');
 
+var Home = require('./components/home');
+
 module.exports = React.createClass({
 
-  displayName: 'App',
+  displayName: 'HTML',
+
+  propTypes: {
+    markup: React.PropTypes.string.isRequired
+  },
 
   render: function render() {
     return (
@@ -18,7 +24,7 @@ module.exports = React.createClass({
         ]),
 
         r.body([
-          r.div({id: 'app'}, ['hello world'])
+          r.div({id: 'app', dangerouslySetInnerHTML: {__html: this.props.markup}})
         ]),
 
         r.script({src: '/script.js'})

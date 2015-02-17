@@ -6,9 +6,9 @@ var document = require('global/document');
 var React = require('react');
 var r = require('r-dom');
 
-var App = require('./app');
+var Home = require('./app/components/home');
 
 var mountNode = document.getElementById('app');
-React.render(r(App), mountNode);
+React.render(r(Home), mountNode);
 
 global.React = React;

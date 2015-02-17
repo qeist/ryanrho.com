@@ -29,7 +29,7 @@ gulp.task('build-client-js', function buildClientJs() {
       .pipe(gulp.dest('./public'));
 });
 
-gulp.task('watch', function watchFiles() {
+gulp.task('watch', ['build-sass', 'build-client-js'], function watchFiles() {
   gulp.watch('client/stylesheets/**/*.scss', ['build-sass']);
   gulp.watch('client/javascripts/**/*.js', ['build-client-js']);
   gulp.watch('index.js');
