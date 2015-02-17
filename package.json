@@ -12,10 +12,10 @@
     "express": "~4.9.x",
     "global": "^4.3.0",
     "r-dom": "^1.0.2",
-    "react": "^0.12.2"
+    "react": "^0.12.2",
+    "babel": "^4.0.2"
   },
   "devDependencies": {
-    "babel": "^4.0.2",
     "babelify": "^5.0.3",
     "bootstrap-sass": "^3.3.3",
     "font-awesome": "^4.3.0",
