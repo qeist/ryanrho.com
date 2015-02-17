@@ -36,20 +36,30 @@ module.exports = React.createClass({
 
         r.main({className: 'content padding-large'}, [
           r.div({className: 'content__intro center-block padding--ends'}, [
-            r.p('Ryan (a.k.a Yongseok, and 노용석) is a seasoned software engineer ' +
-                'with diverse technical skills and work experiences at startups, ' +
-                'research company, and corporations. He\'s currently working at Uber in San Francisco.'),
+            r.p([
+              'Ryan (a.k.a Yongseok, and 노용석) is a seasoned software engineer ',
+              'with diverse technical skills and work experiences at startups, ',
+              'research company, and corporations. He\'s currently working at ',
+              r.a({href: 'http://uber.com'}, 'Uber'),
+              ' in San Francisco.'
+            ]),
 
-            r.p('Ryan\'s primary goal is to invent the future of lifestyles through ' +
-                'extensive tech skills. His main interests are software engineering, ' +
-                'user interface/experience, and sharing economy.'),
+            r.p([
+              'Ryan\'s primary goal is to invent the future of lifestyles through ',
+              'extensive tech skills. His main interests are software engineering, ',
+              'user interface/experience, and sharing economy.'
+            ]),
 
-            r.p('He\'s currently building his technical career on front-end development, ' +
-                'focusing on web development, especially single page apps & hybrid mobile apps ' +
-                'with skills of, but not limited to, Node.js, React.js, and Python.'),
+            r.p([
+              'He\'s currently building his technical career on front-end development, ',
+              'focusing on web development, especially single page apps & hybrid mobile apps ',
+              'with skills of, but not limited to, ',
+              r.a({href: 'http://nodejs.org/'}, 'Node.js'), ' and ',
+              r.a({href: 'http://facebook.github.io/react/'}, 'React.js'), '.'
+            ]),
 
             r.p('He received his bachelor\'s degree from the University of Illinois at Urbana-Champaign ' +
-                'and master\'s degree at the University of California, Berkeley.')
+                'and master\'s degree from the University of California, Berkeley.')
           ])
         ]),
 

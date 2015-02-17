@@ -15,8 +15,25 @@
   .content__intro {
     max-width: 1000px;
   }
+
+  a, a:active, a:visited {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: $primary-color;
+  }
 }
 
 .footer {
   background-color: $tertiary-color;
+
+  a, a:active, a:visited {
+    color: $white;
+  }
+
+  a:hover {
+    color: $primary-color;
+  }
 }
