@@ -1,12 +1,5 @@
-$white: #FFFFFF;
-$gray: #AAAAAA;
-
-$primary-color: #6B4746;
-$secondary-color: #8E9142;
-$tertiary-color: #A7AA56;
-
 body {
-  background: $primary-color;
+  background: $tertiary-color;
   color: $white;
 }
 
@@ -15,7 +8,7 @@ h1 {
 }
 
 .fa {
-  font-size: 80px;
+  font-size: 70px;
 }
 
 a, a:active, a:visited {
@@ -23,5 +16,9 @@ a, a:active, a:visited {
 }
 
 a:hover {
-  color: $gray;
+  color: $primary-color;
+}
+
+p {
+  font-size: 24px;
 }

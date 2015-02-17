@@ -1,0 +1,45 @@
+$spacing-tiny: 8px;
+$spacing-small: $spacing-tiny * 2;
+$spacing: $spacing-small * 2;
+$spacing-large: $spacing + $spacing-small;
+
+.padding {
+  padding: $spacing;
+}
+
+.padding-large {
+  padding: $spacing-large;
+}
+
+.padding-large--ends {
+  padding-top: $spacing-large;
+  padding-bottom: $spacing-large;
+}
+
+.margin--sides {
+  margin-left: $spacing;
+  margin-right: $spacing;
+}
+
+.margin--ends {
+  margin-top: $spacing;
+  margin-bottom: $spacing;
+}
+
+.margin-large--ends {
+  margin-top: $spacing-large;
+  margin-bottom: $spacing-large;
+}
+
+.margin-small--sides {
+  margin-left: $spacing-small;
+  margin-right: $spacing-small;
+}
+
+.margin--bottom {
+  margin-bottom: $spacing;
+}
+
+.margin-large--bottom {
+  margin-bottom: $spacing-large;
+}

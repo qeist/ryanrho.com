@@ -1,0 +1,15 @@
+.header {
+  background-color: $primary-color;
+}
+
+.content {
+  background-color: $secondary-color;
+
+  .content__intro {
+    max-width: 1000px;
+  }
+}
+
+.footer {
+  background-color: $tertiary-color;
+}
