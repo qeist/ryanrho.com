@@ -28,13 +28,13 @@ module.exports = React.createClass({
 
   render() {
     return (
-      r.div([
+      r.div({className: 'home'}, [
 
         r.header({className: 'header padding-large--ends'}, [
           r.h1({className: 'text-center'}, 'Ryan Rho')
         ]),
 
-        r.div({className: 'content padding-large'}, [
+        r.main({className: 'content padding-large'}, [
           r.div({className: 'content__intro center-block padding--ends'}, [
             r.p('Ryan (a.k.a Yongseok, and 노용석) is a seasoned software engineer ' +
                 'with diverse technical skills and work experiences at startups, ' +

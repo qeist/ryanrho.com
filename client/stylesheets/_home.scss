@@ -1,8 +1,15 @@
+.home {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .header {
   background-color: $primary-color;
 }
 
 .content {
+  flex: 1;
   background-color: $secondary-color;
 
   .content__intro {
