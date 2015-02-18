@@ -31,7 +31,11 @@ module.exports = React.createClass({
       r.div({className: 'home'}, [
 
         r.header({className: 'header padding-large--ends'}, [
-          r.h1({className: 'text-center'}, 'Ryan Rho')
+          r.h1({className: 'text-center'}, 'Ryan Rho'),
+          r.h2({className: 'header__subtitle text-center'}, [
+            'Software Engineer at ',
+            r.a({href: 'http://uber.com'}, 'Uber')
+          ])
         ]),
 
         r.main({className: 'content padding-large'}, [
@@ -39,9 +43,7 @@ module.exports = React.createClass({
             r.p([
               'Ryan (a.k.a Yongseok, and 노용석) is a seasoned software engineer ',
               'with diverse technical skills and work experiences at startups, ',
-              'research company, and corporations. He\'s currently working at ',
-              r.a({href: 'http://uber.com'}, 'Uber'),
-              ' in San Francisco.'
+              'research company, and corporations.'
             ]),
 
             r.p([
