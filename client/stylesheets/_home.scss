@@ -10,6 +10,7 @@
 
 .content {
   flex: 1;
+  -ms-flex: 1;
   background-color: $secondary-color;
 
   .content__intro {
