@@ -6,16 +6,6 @@
 
 .header {
   background-color: $primary-color;
-
-  .header__subtitle {
-    a:active, a:visited {
-      color: $white;
-    }
-
-    a:hover {
-      color: $secondary-color;
-    }
-  }
 }
 
 .content {

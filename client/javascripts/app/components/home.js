@@ -32,10 +32,7 @@ module.exports = React.createClass({
 
         r.header({className: 'header padding-large--ends'}, [
           r.h1({className: 'text-center'}, 'Ryan Rho'),
-          r.h2({className: 'header__subtitle text-center'}, [
-            'Software Engineer at ',
-            r.a({href: 'http://uber.com'}, 'Uber')
-          ])
+          r.h2({className: 'text-center'}, 'Software Engineer at Uber')
         ]),
 
         r.main({className: 'content padding-large'}, [
