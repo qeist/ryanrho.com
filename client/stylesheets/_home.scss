@@ -1,5 +1,6 @@
 .home {
   display: flex;
+  display: -ms-flexbox;
   height: 100%;
   flex-direction: column;
   -ms-flex-direction: column;
