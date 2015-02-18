@@ -8,6 +8,8 @@ body, .home {
 
 .header {
   background-color: $primary-color;
+  flex: none;
+  -ms-flex: none;
 }
 
 .content {
@@ -31,6 +33,8 @@ body, .home {
 
 .footer {
   background-color: $tertiary-color;
+  flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
 
   a, a:active, a:visited {
     color: $white;
