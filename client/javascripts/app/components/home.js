@@ -28,16 +28,16 @@ module.exports = React.createClass({
 
   render() {
     return (
-      r.div({className: 'home'}, [
+      r.div({className: 'home flexbox'}, [
 
-        r.header({className: 'header padding-large--ends'}, [
+        r.header({className: 'header flex--none padding-large--ends'}, [
           r.div({className: 'margin--sides text-center'}, [
             r.h1('Ryan Rho'),
             r.h2('Software Engineer at Uber')
           ])
         ]),
 
-        r.main({className: 'content padding-large'}, [
+        r.main({className: 'content flex--one padding-large'}, [
           r.div({className: 'content__intro center-block padding--ends'}, [
             r.p([
               'Ryan (a.k.a Yongseok, and 노용석) is a seasoned software engineer ',
@@ -64,7 +64,7 @@ module.exports = React.createClass({
           ])
         ]),
 
-        r.footer({className: 'footer padding'}, [
+        r.footer({className: 'footer flex--none padding'}, [
           r.ul({className: 'text-center list-unstyled list-inline'},
             links.map(function renderLink(item, index) {
               return (

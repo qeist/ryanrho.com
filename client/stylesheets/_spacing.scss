@@ -58,3 +58,21 @@ $spacing-huge: $spacing * 2;
 .margin-large--bottom {
   margin-bottom: $spacing-large;
 }
+
+.flexbox {
+  height: 100%;
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.flex--none {
+  flex: none;
+  -ms-flex: none;
+}
+
+.flex--one {
+  flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+}

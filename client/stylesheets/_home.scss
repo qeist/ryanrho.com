@@ -1,20 +1,8 @@
-body, .home {
-  display: flex;
-  display: -ms-flexbox;
-  height: 100%;
-  flex-direction: column;
-  -ms-flex-direction: column;
-}
-
 .header {
   background-color: $primary-color;
-  flex: none;
-  -ms-flex: none;
 }
 
 .content {
-  flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
   background-color: $secondary-color;
 
   .content__intro {
@@ -33,8 +21,6 @@ body, .home {
 
 .footer {
   background-color: $tertiary-color;
-  flex: none;
-  -ms-flex: none;
 
   a, a:active, a:visited {
     color: $white;
