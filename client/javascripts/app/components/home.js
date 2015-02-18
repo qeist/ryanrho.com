@@ -64,11 +64,11 @@ module.exports = React.createClass({
           ])
         ]),
 
-        r.footer({className: 'footer padding-large'}, [
+        r.footer({className: 'footer padding'}, [
           r.ul({className: 'text-center list-unstyled list-inline'},
             links.map(function renderLink(item, index) {
               return (
-                r.li({key: index}, [
+                r.li({key: index, className: 'padding-small'}, [
                   r.a({className: 'margin--sides', href: item.link}, [
                     r.i({className: item.class})
                   ])
