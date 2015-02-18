@@ -1,10 +1,24 @@
+$small-screen-size: 500px;
+
 body {
-  background: $tertiary-color;
+  background-color: $primary-color;
   color: $white;
 }
 
 h1 {
   font-size: 90px;
+
+  @media screen and (max-width: $small-screen-size) {
+    font-size: 60px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+
+  @media screen and (max-width: $small-screen-size) {
+    font-size: 20px;
+  }
 }
 
 .fa {

@@ -31,8 +31,10 @@ module.exports = React.createClass({
       r.div({className: 'home'}, [
 
         r.header({className: 'header padding-large--ends'}, [
-          r.h1({className: 'text-center'}, 'Ryan Rho'),
-          r.h2({className: 'text-center'}, 'Software Engineer at Uber')
+          r.div({className: 'margin--sides text-center'}, [
+            r.h1('Ryan Rho'),
+            r.h2('Software Engineer at Uber')
+          ])
         ]),
 
         r.main({className: 'content padding-large'}, [
