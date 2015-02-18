@@ -11,7 +11,7 @@ var uglify = require('gulp-uglify');
 var util = require('gulp-util');
 
 gulp.task('default', ['watch']);
-gulp.task('build', ['build-sass', 'build-client-js']);
+gulp.task('build', ['build-sass', 'build-client-js', 'copy-fonts']);
 
 gulp.task('build-sass', function buildSass() {
   gulp.src('client/stylesheets/main.scss')
