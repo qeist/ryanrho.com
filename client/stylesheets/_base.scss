@@ -3,18 +3,21 @@ $small-screen-size: 500px;
 body {
   background-color: $primary-color;
   color: $white;
+  font-weight: 200;
 }
 
 h1 {
   font-size: 90px;
+  font-weight: 400;
 
   @media screen and (max-width: $small-screen-size) {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 
 h2 {
   font-size: 30px;
+  font-weight: 200;
 
   @media screen and (max-width: $small-screen-size) {
     font-size: 20px;
@@ -22,10 +25,18 @@ h2 {
 }
 
 .fa {
-  font-size: 70px;
+  font-size: 60px;
+
+  @media screen and (max-width: $small-screen-size) {
+    font-size: 50px;
+  }
 }
 
 p {
   font-size: 24px;
   margin-bottom: 20px;
+
+  @media screen and (max-width: $small-screen-size) {
+    font-size: 20px;
+  }
 }

@@ -12,7 +12,7 @@ module.exports = React.createClass({
       r.main({className: 'content flex--one padding-large'}, [
         r.div({className: 'content__intro center-block padding-small--ends'}, [
           r.p([
-            'Ryan (a.k.a 노용석) is a seasoned software engineer ',
+            'Ryan is a seasoned software engineer ',
             'with diverse technical skills and work experiences at startups, ',
             'research company, and corporations.'
           ]),
