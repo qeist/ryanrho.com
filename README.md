@@ -5,5 +5,5 @@ A simple web app, probably an overkill yet fun, for ryanrho.com.
 ## Features
 
 * ES6 support using Babel (6to5)
-* React full page rendering
+* React full page & server side rendering
 * Gulp & Nodemon
