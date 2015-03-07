@@ -9,16 +9,16 @@ const LINKS = [
     link: 'https://fb.com/ryanrho'
   },
   {
+    class: 'fa fa-twitter',
+    link: 'https://twitter.com/ryanrho'
+  },
+  {
     class: 'fa fa-linkedin',
     link: 'https://www.linkedin.com/in/ryanrho'
   },
   {
     class: 'fa fa-github',
     link: 'https://github.com/rhobot'
-  },
-  {
-    class: 'fa fa-envelope',
-    link: 'mailto:i@ryanrho.com'
   }
 ];
 

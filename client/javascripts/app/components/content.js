@@ -35,6 +35,6 @@ module.exports = React.createClass({
               'and master\'s degree from the University of California, Berkeley.')
         ])
       ])
-    )
+    );
   }
 });
