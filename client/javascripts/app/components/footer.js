@@ -26,7 +26,7 @@ export default React.createClass({
 
   displayName: 'Footer',
 
-  render: function render() {
+  render() {
     return (
       r.footer({className: 'footer flex--none padding'}, [
         r.ul({className: 'text-center list-unstyled list-inline'},
