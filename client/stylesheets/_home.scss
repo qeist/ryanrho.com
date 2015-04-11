@@ -3,7 +3,7 @@
 }
 
 .content {
-  background-color: $secondary-color;
+  background-color: $primary-color;
 
   .content__intro {
     max-width: 1000px;
@@ -20,13 +20,13 @@
 }
 
 .footer {
-  background-color: $secondary-color;
+  background-color: $primary-color;
 
   a, a:active, a:visited {
     color: $white;
   }
 
   a:hover {
-    color: $primary-color;
+    color: $secondary-color;
   }
 }
