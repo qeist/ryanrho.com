@@ -1,12 +1,12 @@
 'use strict';
 
-let global = require('global');
-let document = require('global/document');
+import global from 'global';
+import document from 'global/document'
 
-let React = require('react');
-let r = require('r-dom');
+import React from 'react'
+import r from 'r-dom'
 
-let Home = require('./app/components/home');
+import Home from './app/components/home'
 
 let mountNode = document.getElementById('app');
 React.render(r(Home), mountNode);

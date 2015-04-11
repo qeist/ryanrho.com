@@ -1,13 +1,13 @@
 'use strict';
 
-let React = require('react');
-let r = require('r-dom');
+import React from 'react';
+import r from 'r-dom';
 
-let Header = require('./header');
-let Content = require('./content');
-let Footer = require('./footer');
+import Header from './header';
+import Content from './content';
+import Footer from './footer';
 
-module.exports = React.createClass({
+export default React.createClass({
 
   displayName: 'Home',
 

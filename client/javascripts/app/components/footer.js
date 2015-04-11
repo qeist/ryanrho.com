@@ -1,7 +1,7 @@
 'use strict';
 
-let React = require('react');
-let r = require('r-dom');
+import React from 'react';
+import r from 'r-dom';
 
 const LINKS = [
   {
@@ -22,7 +22,7 @@ const LINKS = [
   }
 ];
 
-module.exports = React.createClass({
+export default React.createClass({
 
   displayName: 'Footer',
 
