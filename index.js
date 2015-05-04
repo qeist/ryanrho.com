@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '/public'));
 
 function getRoute(HtmlComponent, req, res) {
   routes(req.originalUrl, function render(Handler) {
-    let html = React.renderToStaticMarkup(r(ReactKNightHtml, {
+    var html = React.renderToStaticMarkup(r(ReactKNightHtml, {
       markup: React.renderToString(r(Handler))
     }));
 
