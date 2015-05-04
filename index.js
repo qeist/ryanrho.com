@@ -10,7 +10,9 @@ var ReactKNightHtml = require('./client/javascripts/k-night/html.jsx');
 var routes = require('./client/javascripts/routes.jsx');
 
 var express = require('express');
+var compression = require('compression');
 var app = express();
+app.use(compression());
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
