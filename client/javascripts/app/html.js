@@ -1,7 +1,6 @@
 'use strict';
 
 import React from 'react';
-import r from 'r-dom';
 
 export default React.createClass({
 
@@ -13,23 +12,18 @@ export default React.createClass({
 
   render() {
     return (
-      r.html([
-        r.head([
-          r.meta({charSet: 'utf-8'}),
-          r.meta({
-            name: 'viewport',
-            content: 'width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no'
-          }),
-          r.title('Ryan Rho'),
-          r.link({rel: 'stylesheet', href: '/style.css'})
-        ]),
-
-        r.body([
-          r.div({id: 'app', dangerouslySetInnerHTML: {__html: this.props.markup}})
-        ]),
-
-        r.script({src: '/script.js'})
-      ])
+      <html>
+        <head>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no" />
+          <title>Ryan Rho</title>
+          <link rel="stylesheet" href="/style.css" />
+          <body>
+            <div id="app" dangerouslySetInnerHTML={{__html: this.props.markup}} />
+          </body>
+          <script src="/script.js"/>
+        </head>
+      </html>
     );
   }
 });
