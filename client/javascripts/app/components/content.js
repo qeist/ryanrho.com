@@ -1,7 +1,6 @@
 'use strict';
 
 import React from 'react';
-import r from 'r-dom';
 
 export default React.createClass({
 
@@ -19,7 +18,9 @@ export default React.createClass({
           <p>
             He is currently building his technical career on front-end & Node development,
             focusing on responsive single page apps & hybrid apps
-            with skills of, but not limited to, <a href="http://nodejs.org/">Node</a> and <a href="http://facebook.github.io/react/">React</a>.
+            with skills of, but not limited to,&nbsp;
+            <a href="http://nodejs.org/">Node</a> and&nbsp;
+            <a href="http://facebook.github.io/react/">React</a>.
           </p>
           <p>
             Ryan's primary goal is to invent the future of lifestyles through

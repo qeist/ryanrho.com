@@ -28,17 +28,17 @@ export default React.createClass({
   render() {
     return (
       <footer className="footer flex--none padding">
-          <ul className="text-center list-unstyled list-inline">
-            {LINKS.map((item, index) => {
-              return (
-                <li key={index} className="padding-small">
-                  <a className="margin--sides" href={item.link}>
-                    <i className={item.class} />
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+        <ul className="text-center list-unstyled list-inline">
+          {LINKS.map((item, index) => {
+            return (
+              <li key={index} className="padding-small">
+                <a className="margin--sides" href={item.link}>
+                  <i className={item.class} />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </footer>
     );
   }
