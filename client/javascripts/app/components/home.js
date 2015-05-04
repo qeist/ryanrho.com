@@ -1,7 +1,6 @@
 'use strict';
 
 import React from 'react';
-import r from 'r-dom';
 
 import Header from './header';
 import Content from './content';
@@ -13,11 +12,11 @@ export default React.createClass({
 
   render() {
     return (
-      r.div({className: 'home flexbox'}, [
-        r(Header),
-        r(Content),
-        r(Footer)
-      ])
+      <div className="home flexbox">
+        <Header />
+        <Content />
+        <Footer />
+      </div>
     );
   }
 });

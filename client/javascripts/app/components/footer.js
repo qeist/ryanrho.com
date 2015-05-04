@@ -1,7 +1,6 @@
 'use strict';
 
 import React from 'react';
-import r from 'r-dom';
 
 const LINKS = [
   {
@@ -28,19 +27,19 @@ export default React.createClass({
 
   render() {
     return (
-      r.footer({className: 'footer flex--none padding'}, [
-        r.ul({className: 'text-center list-unstyled list-inline'},
-          LINKS.map(function renderLink(item, index) {
-            return (
-              r.li({key: index, className: 'padding-small'}, [
-                r.a({className: 'margin--sides', href: item.link}, [
-                  r.i({className: item.class})
-                ])
-              ])
-            );
-          })
-        )
-      ])
+      <footer className="footer flex--none padding">
+          <ul className="text-center list-unstyled list-inline">
+            {LINKS.map((item, index) => {
+              return (
+                <li key={index} className="padding-small">
+                  <a className="margin--sides" href={item.link}>
+                    <i className={item.class} />
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+      </footer>
     );
   }
 });

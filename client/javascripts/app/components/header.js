@@ -1,7 +1,6 @@
 'use strict';
 
 import React from 'react';
-import r from 'r-dom';
 
 export default React.createClass({
 
@@ -9,12 +8,12 @@ export default React.createClass({
 
   render() {
     return (
-      r.header({className: 'header flex--none padding-large--ends'}, [
-        r.div({className: 'margin--sides text-center'}, [
-          r.h1('Ryan Rho'),
-          r.h2('Software Engineer at Uber')
-        ])
-      ])
+      <header className="header flex--none padding-large--ends">
+        <div className="margin--sides text-center">
+          <h1>Ryan Rho</h1>
+          <h2>Software Engineer at Uber</h2>
+        </div>
+      </header>
     );
   }
 });
