@@ -6,8 +6,9 @@ registerBabel();
 import React from 'react';
 import r from 'r-dom';
 
-import ReactHtml from './client/javascripts/app/html';
-import routes from './client/javascripts/app/routes.jsx';
+import ReactHtml from './client/javascripts/app/html.jsx';
+import ReactKNightHtml from './client/javascripts/k-night/html.jsx';
+import routes from './client/javascripts/routes.jsx';
 
 let express = require('express');
 let app = express();
@@ -15,9 +16,9 @@ let app = express();
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
-function getRoute(req, res) {
+function getRoute(HtmlComponent, req, res) {
   routes(req.originalUrl, (Handler) => {
-    let html = React.renderToStaticMarkup(r(ReactHtml, {
+    let html = React.renderToStaticMarkup(r(ReactKNightHtml, {
       markup: React.renderToString(r(Handler))
     }));
 
@@ -25,8 +26,8 @@ function getRoute(req, res) {
   });
 }
 
-app.get('/', getRoute);
-app.get('/k-night/2015', getRoute);
+app.get('/', getRoute.bind(this, ReactHtml));
+app.get('/k-night', getRoute.bind(this, ReactKNightHtml));
 
 app.listen(app.get('port'), () => {
   let port = app.get('port');

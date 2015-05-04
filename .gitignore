@@ -34,3 +34,4 @@ node_modules
 .jshintrc
 
 public
+.DS_Store

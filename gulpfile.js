@@ -22,7 +22,7 @@ gulp.task('build-sass', function buildSass() {
 });
 
 gulp.task('build-client-js', function buildClientJs() {
-  gulp.src('client/javascripts/main.js')
+  gulp.src('client/javascripts/main.jsx')
       .pipe(browserify({transform: babelify}))
       .pipe(rename('script.js'))
       .pipe(uglify())
@@ -38,6 +38,7 @@ gulp.task('watch', ['copy-fonts', 'build-sass', 'build-client-js'], function wat
 
   gulp.watch('client/stylesheets/**/*.scss', ['build-sass']);
   gulp.watch('client/javascripts/**/*.js', ['build-client-js']);
+  gulp.watch('client/javascripts/**/*.jsx', ['build-client-js']);
 
   nodemon({
     script: 'index.js',
