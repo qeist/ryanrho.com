@@ -1,29 +1,34 @@
 'use strict';
 
-require('babel/register');
+import registerBabel from 'babel/register';
+registerBabel();
 
-var React = require('react');
-var r = require('r-dom');
+import React from 'react';
+import r from 'r-dom';
 
-var ReactHtml = require('./client/javascripts/app/html');
-var ReactHome = require('./client/javascripts/app/components/home');
+import ReactHtml from './client/javascripts/app/html';
+import routes from './client/javascripts/app/routes';
 
-var express = require('express');
-var app = express();
+let express = require('express');
+let app = express();
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', function getRoot(request, response) {
+function getRoute(req, res) {
+  routes(req.originalUrl, (Handler) => {
+    let html = React.renderToStaticMarkup(r(ReactHtml, {
+      markup: React.renderToString(r(Handler))
+    }));
 
-  var html = React.renderToStaticMarkup(r(ReactHtml, {
-    markup: React.renderToString(r(ReactHome))
-  }));
+    res.send('<!DOCTYPE html>' + html);
+  });
+}
 
-  response.send('<!DOCTYPE html>' + html);
-});
+app.get('/', getRoute);
+app.get('/k-night/2015', getRoute);
 
-app.listen(app.get('port'), function openPort() {
-  var port = app.get('port');
-  console.log('Node app is running at localhost: ' + port);
+app.listen(app.get('port'), () => {
+  let port = app.get('port');
+  console.log(`Node app is running at localhost: ${port}`);
 });
