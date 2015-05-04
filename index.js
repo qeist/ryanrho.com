@@ -30,5 +30,5 @@ app.get('/k-night', getRoute.bind(this, ReactKNightHtml));
 
 app.listen(app.get('port'), function run() {
   var port = app.get('port');
-  console.log(`Node app is running at localhost: ${port}`);
+  console.log('Node app is running at localhost: ' + port);
 });
