@@ -7,7 +7,7 @@ import React from 'react';
 import r from 'r-dom';
 
 import ReactHtml from './client/javascripts/app/html';
-import routes from './client/javascripts/app/routes';
+import routes from './client/javascripts/app/routes.jsx';
 
 let express = require('express');
 let app = express();

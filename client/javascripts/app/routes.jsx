@@ -1,7 +1,7 @@
 'use strict';
 
 import ReactRouter from 'react-router';
-import Home from './components/home';
+import Home from './components/home.jsx';
 import React from 'react';
 
 let {DefaultRoute, Route} = ReactRouter;

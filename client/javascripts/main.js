@@ -7,7 +7,7 @@ import React from 'react';
 import ReactRouter from 'react-router';
 let {HistoryLocation} = ReactRouter;
 
-import routes from './app/routes';
+import routes from './app/routes.jsx';
 
 let mountNode = document.getElementById('app');
 
