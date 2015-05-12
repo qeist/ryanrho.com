@@ -1,17 +1,23 @@
+$main-title-color: #323338;
+$secondary-font-family: 'Georgia', 'Times New Roman';
+
+.k-night-title {
+  font-size: 50px;
+  font-family: $secondary-font-family;
+  text-align: center;
+  color: $main-title-color;
+}
+
 .k-night-header {
   background-color: #303136;
   text-align: center;
-  text-transform: uppercase;
 
   padding-top: 100px;
 }
 
 .k-night-header__container {
   display: inline-block;
-}
-
-.k-night-header__subtitle-container {
-
+  text-transform: uppercase;
 }
 
 .k-night-header__subtitle-container__line {
@@ -32,7 +38,13 @@
 }
 
 .k-night-header__location {
+  font-family: $secondary-font-family;
   font-size: 20px;
+  font-style: italic;
+
+  small {
+    font-size: 15px;
+  }
 }
 
 .k-night-header__rsvp-button {
@@ -40,4 +52,25 @@
   background-color: #303136;
   border: 1px #1B84BD solid;
   padding: 8px 20px;
+}
+
+.k-night-timetable {
+  background-color: #eeeeee;
+}
+
+.k-night-speakers {
+  background-color: #eeeeee;
+}
+
+.k-night-sponsors {
+  background-color: #eeeeee;
+}
+
+.k-night-location {
+  background-color: #2C2D33;
+}
+
+.k-night-location__title {
+  text-align: center;
+  color: $white;
 }

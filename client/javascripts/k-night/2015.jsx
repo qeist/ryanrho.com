@@ -21,7 +21,7 @@ export default React.createClass({
             </h1>
           </section>
           <section className="k-night-header__location margin-large--bottom">
-            <div>Thursday, May 28 | 6:00 pm - 10:30 pm</div>
+            <div>Thursday, May 28 | 6:00 <small>pm</small> - 10:30 <small>pm</small></div>
             <div>Biltmore Hotel and Suites</div>
           </section>
           <section className="padding-huge--bottom">
@@ -29,17 +29,17 @@ export default React.createClass({
           </section>
         </header>
         <main>
-          <section>
-            <h1>Timetable</h1>
+          <section className="k-night-timetable">
+            <h1 className="k-night-title k-night-timetable__title no-margin">Timetable</h1>
           </section>
-          <section>
-            <h1>Speakers</h1>
+          <section className="k-night-speakers">
+            <h1 className="k-night-title k-night-speakers__title no-margin">Speakers</h1>
           </section>
-          <section>
-            <h1>Sponsors</h1>
+          <section className="k-night-sponsors">
+            <h1 className="k-night-title k-night-sponsors__title no-margin">Sponsors</h1>
           </section>
-          <footer>
-
+          <footer className="k-night-location">
+            <h1 className="k-night-title k-night-location__title no-margin">Location</h1>
           </footer>
         </main>
       </div>
