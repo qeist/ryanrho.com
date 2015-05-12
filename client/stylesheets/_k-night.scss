@@ -1,0 +1,43 @@
+.k-night-header {
+  background-color: #303136;
+  text-align: center;
+  text-transform: uppercase;
+
+  padding-top: 100px;
+}
+
+.k-night-header__container {
+  display: inline-block;
+}
+
+.k-night-header__subtitle-container {
+
+}
+
+.k-night-header__subtitle-container__line {
+  height: 1px;
+  background-color: #515151;
+  align-self: center;
+}
+
+.k-night-header__title {
+  display: inline;
+  font-size: 120px;
+  font-weight: 900;
+}
+
+.k-night-header__subtitle {
+  font-weight: 900;
+  letter-spacing: 8px;
+}
+
+.k-night-header__location {
+  font-size: 20px;
+}
+
+.k-night-header__rsvp-button {
+  font-size: 20px;
+  background-color: #303136;
+  border: 1px #1B84BD solid;
+  padding: 8px 20px;
+}

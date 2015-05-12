@@ -12,7 +12,7 @@ export default React.createClass({
 
   render() {
     return (
-      <div className="home flexbox">
+      <div className="home flexbox flexbox--column">
         <Header />
         <Content />
         <Footer />

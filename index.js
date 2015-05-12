@@ -28,7 +28,7 @@ function getRoute(HtmlComponent, req, res) {
 }
 
 app.get('/', getRoute.bind(this, ReactHtml));
-app.get('/k-night', getRoute.bind(this, ReactKNightHtml));
+app.get('/knight', getRoute.bind(this, ReactKNightHtml));
 
 app.listen(app.get('port'), function run() {
   var port = app.get('port');

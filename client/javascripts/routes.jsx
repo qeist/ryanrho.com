@@ -11,8 +11,8 @@ let {DefaultRoute, Route} = ReactRouter;
 function getRoutes() {
   return (
     <Route name="app" path="/">
-      <Route name="home" path="/" handler={Home} />
-      <Route name="k-night2015" path="k-night" handler={KNight2015} />
+      <DefaultRoute name="home" handler={Home} />
+      <Route name="k-night2015" path="knight" handler={KNight2015} />
     </Route>
   );
 }
