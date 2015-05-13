@@ -1,11 +1,20 @@
-$main-title-color: #323338;
+$main-title-color: #28292d;
 $secondary-font-family: 'Georgia', 'Times New Roman';
 
 .k-night-title {
-  font-size: 50px;
+  font-size: 48pt;
   font-family: $secondary-font-family;
   text-align: center;
   color: $main-title-color;
+
+  @media screen and (max-width: $small-screen-size) {
+    font-size: 32pt;
+  }
+}
+
+.k-night-title-icon {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .k-night-header {
@@ -30,6 +39,10 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   display: inline;
   font-size: 120px;
   font-weight: 900;
+
+  @media screen and (max-width: $small-screen-size) {
+    font-size: 80px;
+  }
 }
 
 .k-night-header__subtitle {
@@ -60,20 +73,32 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   }
 }
 
-.k-night-timetable {
+.k-night-section {
   background-color: #eeeeee;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.k-night-speakers {
-  background-color: #eeeeee;
+.k-night-section--timetable {
+
 }
 
-.k-night-sponsors {
-  background-color: #eeeeee;
+.k-night-section--speakers {
+  background-color: #f7f7f7;
 }
 
-.k-night-location {
+.k-night-section--location {
   background-color: #2C2D33;
+}
+
+.k-night-sponsors__container {
+  width: 80%;
+  margin: 0 auto;
+
+  @media screen and (max-width: $small-screen-size) {
+    width: 100%;
+  }
+
 }
 
 .k-night-location__title {

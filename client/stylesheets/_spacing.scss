@@ -4,6 +4,14 @@ $spacing: $spacing-small * 2;
 $spacing-large: $spacing + $spacing-small;
 $spacing-huge: $spacing * 2;
 
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
 .padding {
   padding: $spacing;
 }
@@ -58,6 +66,10 @@ $spacing-huge: $spacing * 2;
   margin-bottom: $spacing-large;
 }
 
+.margin-large--bottom {
+  margin-bottom: $spacing-large;
+}
+
 .margin-small--sides {
   margin-left: $spacing-small;
   margin-right: $spacing-small;
@@ -75,14 +87,6 @@ $spacing-huge: $spacing * 2;
   margin-bottom: $spacing-huge;
 }
 
-.no-margin {
-  margin: 0 !important;
-}
-
-.no-padding {
-  padding: 0 !important;
-}
-
 .flexbox {
   display: flex;
   display: -ms-flexbox;
@@ -94,6 +98,10 @@ $spacing-huge: $spacing * 2;
   -ms-flex-direction: column;
 }
 
+.flexbox--center {
+  align-items: center;
+}
+
 .flex--none {
   flex: none;
   -ms-flex: none;
@@ -102,4 +110,8 @@ $spacing-huge: $spacing * 2;
 .flex--one {
   flex: 1;
   -ms-flex: 1;
+}
+
+.text--center {
+  text-align: center;
 }

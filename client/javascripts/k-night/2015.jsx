@@ -30,17 +30,53 @@ export default React.createClass({
           </section>
         </header>
         <main>
-          <section className="k-night-timetable">
-            <h1 className="k-night-title k-night-timetable__title no-margin">Timetable</h1>
+          <section className="k-night-section k-night-section--timetable">
+            <h1 className="k-night-title k-night-sponsors__title no-margin margin-large--bottom">
+              <i className="k-night-title-icon fa fa-calendar" />
+              Timetable
+            </h1>
           </section>
-          <section className="k-night-speakers">
-            <h1 className="k-night-title k-night-speakers__title no-margin">Speakers</h1>
+
+          <section className="k-night-section k-night-section--speakers">
+            <h1 className="k-night-title k-night-sponsors__title no-margin margin-large--bottom">
+              <i className="k-night-title-icon fa fa-microphone" />
+              Speakers
+            </h1>
           </section>
-          <section className="k-night-sponsors">
-            <h1 className="k-night-title k-night-sponsors__title no-margin">Sponsors</h1>
+
+          <section className="k-night-section k-night-section--sponsors">
+            <h1 className="k-night-title k-night-sponsors__title no-margin margin-large--bottom">
+              <i className="k-night-title-icon fa fa-star-o" />
+              Sponsors
+            </h1>
+            <div className="k-night-sponsors__container">
+              <div className="flexbox flexbox--center">
+                <div className="flex--one text--center">
+                  <img src="/knight2015/lg.png" />
+                </div>
+                <div className="flex--one text--center">
+                  <img src="/knight2015/kotra.png" />
+                </div>
+                <div className="flex--one text--center">
+                  <img src="/knight2015/sktelecom.png" />
+                </div>
+              </div>
+              <div className="flexbox flexbox--center">
+                <div className="flex--one text--center">
+                  <img src="/knight2015/samsung.png" />
+                </div>
+                <div className="flex--one text--center">
+                  <img src="/knight2015/asiana.png" />
+                </div>
+              </div>
+            </div>
           </section>
-          <footer className="k-night-location">
-            <h1 className="k-night-title k-night-location__title no-margin">Location</h1>
+
+          <footer className="k-night-section k-night-section--location">
+            <h1 className="k-night-title k-night-location__title no-margin margin-large--bottom">
+              <i className="k-night-title-icon fa fa-map-marker" />
+              Location
+            </h1>
           </footer>
         </main>
       </div>
