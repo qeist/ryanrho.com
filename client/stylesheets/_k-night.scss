@@ -2,13 +2,14 @@ $main-title-color: #28292d;
 $secondary-font-family: 'Georgia', 'Times New Roman';
 
 .k-night-title {
-  font-size: 48pt;
+  font-size: 36pt;
   font-family: $secondary-font-family;
   text-align: center;
+  text-transform: uppercase;
   color: $main-title-color;
 
   @media screen and (max-width: $small-screen-size) {
-    font-size: 32pt;
+    font-size: 24pt;
   }
 }
 
@@ -93,12 +94,21 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
 
 .k-night-sponsors__container {
   width: 80%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media screen and (max-width: $small-screen-size) {
+  @media screen and (max-width: $tablet-size) {
     width: 100%;
   }
 
+}
+
+.k-night-sponsors__container__item {
+
+  @media screen and (max-width: $tablet-size) {
+    flex-direction: column;
+    -ms-flex-direction: column;
+  }
 }
 
 .k-night-location__title {

@@ -49,23 +49,23 @@ export default React.createClass({
               <i className="k-night-title-icon fa fa-star-o" />
               Sponsors
             </h1>
-            <div className="k-night-sponsors__container">
-              <div className="flexbox flexbox--center">
-                <div className="flex--one text--center">
+            <div className="k-night-sponsors__container margin--bottom">
+              <div className="k-night-sponsors__container__item flexbox flexbox--center">
+                <div className="flex--one text--center margin--bottom">
                   <img src="/knight2015/lg.png" />
                 </div>
-                <div className="flex--one text--center">
+                <div className="flex--one text--center margin--bottom">
                   <img src="/knight2015/kotra.png" />
                 </div>
-                <div className="flex--one text--center">
+                <div className="flex--one text--center margin--bottom">
                   <img src="/knight2015/sktelecom.png" />
                 </div>
               </div>
-              <div className="flexbox flexbox--center">
-                <div className="flex--one text--center">
+              <div className="k-night-sponsors__container__item flexbox flexbox--center">
+                <div className="flex--one text--center margin--bottom">
                   <img src="/knight2015/samsung.png" />
                 </div>
-                <div className="flex--one text--center">
+                <div className="flex--one text--center margin--bottom">
                   <img src="/knight2015/asiana.png" />
                 </div>
               </div>
