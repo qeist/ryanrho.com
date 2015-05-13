@@ -73,10 +73,41 @@ export default React.createClass({
           </section>
 
           <footer className="k-night-section k-night-section--location">
-            <h1 className="k-night-title k-night-location__title no-margin margin-large--bottom">
+            <h1 className="k-night-title k-night-section--location__title no-margin margin-large--bottom">
               <i className="k-night-title-icon fa fa-map-marker" />
               Location
             </h1>
+
+            <div className="flexbox k-night-section--location__item">
+              <div className="flex--one">
+                <h2 className="k-night-location-title no-margin margin--bottom">Biltmore Hotel and Suites</h2>
+                <div>
+                  <div className="flexbox">
+                    <div className="flex--one" />
+                    <div className="flexbox flex--one">
+                      <div className="color--blue padding-small--right">Address</div>
+                      <address className="flex--one">
+                        2151 Laurelwood Rd,<br />
+                        Santa Clara, CA 950549
+                      </address>
+                    </div>
+                    <div className="flex--one" />
+                  </div>
+
+                  <div className="flexbox">
+                    <div className="flex--one" />
+                    <div className="flexbox flex--one">
+                      <div className="info-label color--blue padding-small--right">Phone</div>
+                      <div className="info-label flex--one">(800) 255-9925</div>
+                    </div>
+                    <div className="flex--one" />
+                  </div>
+                </div>
+              </div>
+              <div className="flex--one">
+                {/*map goes here*/}
+              </div>
+            </div>
           </footer>
         </main>
       </div>

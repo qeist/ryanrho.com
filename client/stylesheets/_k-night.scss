@@ -90,6 +90,10 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
 
 .k-night-section--location {
   background-color: #2C2D33;
+
+  .info-label {
+    width: 100px;
+  }
 }
 
 .k-night-sponsors__container {
@@ -111,7 +115,18 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   }
 }
 
-.k-night-location__title {
+.k-night-section--location__title {
   text-align: center;
   color: $white;
+}
+
+.k-night-section--location__item {
+  @media screen and (max-width: $tablet-size) {
+    flex-direction: column;
+    -ms-flex-direction: column;
+  }
+}
+
+.k-night-location-title {
+  text-align: center;
 }
