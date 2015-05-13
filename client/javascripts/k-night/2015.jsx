@@ -25,7 +25,8 @@ export default React.createClass({
             <div>Biltmore Hotel and Suites</div>
           </section>
           <section className="padding-huge--bottom">
-            <button className="k-night-header__rsvp-button">Click Here to RSVP</button>
+            <a href="http://www.bayareakgroup.org/events/k-night-2015"
+               className="k-night-header__rsvp-button">Click Here to RSVP</a>
           </section>
         </header>
         <main>

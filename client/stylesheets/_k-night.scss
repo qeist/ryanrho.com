@@ -48,10 +48,16 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
 }
 
 .k-night-header__rsvp-button {
+  color: $white;
   font-size: 20px;
   background-color: #303136;
   border: 1px #1B84BD solid;
   padding: 8px 20px;
+
+  &:hover, &:active {
+    color: #1B84BD;
+    text-decoration: none;
+  }
 }
 
 .k-night-timetable {
