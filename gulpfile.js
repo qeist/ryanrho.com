@@ -11,7 +11,7 @@ var uglify = require('gulp-uglify');
 var util = require('gulp-util');
 
 gulp.task('default', ['watch']);
-gulp.task('build', ['build-sass', 'build-client-js', 'copy-fonts']);
+gulp.task('build', ['build-sass', 'build-client-js', 'copy-fonts', 'copy-static']);
 
 gulp.task('build-sass', function buildSass() {
   gulp.src('client/stylesheets/main.scss')
@@ -34,7 +34,12 @@ gulp.task('copy-fonts', function copyFonts() {
       .pipe(gulp.dest('./public/fonts'));
 });
 
-gulp.task('watch', ['copy-fonts', 'build-sass', 'build-client-js'], function watchFiles() {
+gulp.task('copy-static', function copyStatic() {
+  gulp.src('client/static/**/*.*')
+      .pipe(gulp.dest('./public'));
+});
+
+gulp.task('watch', ['build'], function watchFiles() {
 
   gulp.watch('client/stylesheets/**/*.scss', ['build-sass']);
   gulp.watch('client/javascripts/**/*.js', ['build-client-js']);
