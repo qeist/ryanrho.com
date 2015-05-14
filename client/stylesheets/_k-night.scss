@@ -225,6 +225,13 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   text-align: center;
 }
 
+.row {
+  @media screen and (max-width: $small-screen-size) {
+    margin: 0 !important;
+  }
+}
+
+
 .k-night-speaker {
   padding: 30px;
   color: $black;
@@ -232,6 +239,7 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   height: 300px;
 
   @media screen and (max-width: $small-screen-size) {
+    padding: 10px;
     font-size: 14px;
     height: auto;
   }
