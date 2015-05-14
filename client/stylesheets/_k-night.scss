@@ -42,7 +42,7 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   font-weight: 900;
 
   @media screen and (max-width: $small-screen-size) {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 
@@ -112,6 +112,12 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   @media screen and (max-width: $tablet-size) {
     flex-direction: column;
     -ms-flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    img {
+      width: 90%;
+    }
   }
 }
 
