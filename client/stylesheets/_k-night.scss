@@ -270,6 +270,7 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   }
 
   .name {
+    font-weight: 500;
     @media screen and (max-width: $small-screen-size) {
       font-size: 25px;
       line-height: 30px;
