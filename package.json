@@ -14,6 +14,7 @@
     "babel": "^4.0.2",
     "babelify": "^5.0.3",
     "bootstrap-sass": "^3.3.3",
+    "classnames": "^2.1.1",
     "compression": "^1.4.3",
     "express": "~4.9.x",
     "font-awesome": "^4.3.0",

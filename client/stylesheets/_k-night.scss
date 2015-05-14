@@ -13,6 +13,17 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   }
 }
 
+.k-night-subtitle {
+  font-size: 24pt;
+  font-family: $secondary-font-family;
+  text-align: center;
+  color: #515151;
+
+  @media screen and (max-width: $small-screen-size) {
+    font-size: 18pt;
+  }
+}
+
 .k-night-title-icon {
   display: block;
   margin-bottom: 15px;
@@ -212,4 +223,34 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
 
 .k-night-location-title {
   text-align: center;
+}
+
+.k-night-speaker {
+  padding: 30px;
+  color: $black;
+  text-align: center;
+  height: 300px;
+
+  .job-title {
+    font-size: 17px;
+
+    @media screen and (max-width: $small-screen-size) {
+      font-size: 14px;
+    }
+  }
+
+  .group {
+    display: inline;
+    background-color: $blue;
+    border-radius: 14px;
+    padding: 3px 7px;
+    color: $white;
+  }
+
+  .topic {
+    line-height: 30px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

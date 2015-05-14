@@ -2,6 +2,7 @@
 
 import React from 'react';
 import {GoogleMaps, Marker} from 'react-google-maps';
+import Speaker from './speaker.jsx';
 
 const coordinate = {lat: 37.383708, lng: -121.961887};
 
@@ -70,6 +71,82 @@ export default React.createClass({
               <i className="k-night-title-icon fa fa-microphone" />
               Speakers
             </h1>
+
+            <h2 className="k-night-subtitle">Keynote</h2>
+
+            <div className="row">
+              <Speaker
+                location="Main Ballroom"
+                name="John Sung Kim"
+                title="CEO, Five9"
+                isFull={true}>
+                Starting a Company with Six Credit Cards and a Laptop
+              </Speaker>
+            </div>
+
+            <h2 className="k-night-subtitle">Session 1</h2>
+
+            <div className="row">
+              <Speaker
+                group="Group C/E"
+                location="Main Ballroom"
+                name="Jae Cho"
+                title="Corporate VP, Xilinx">
+                Semiconductor Industry Operation: History and Successful Model
+              </Speaker>
+              <Speaker
+                group="Group U"
+                location="Room #01"
+                name="Reagan Kim"
+                title="Visual Designer, Google">
+                How to Design for the World
+              </Speaker>
+              <Speaker
+                group="Group V"
+                location="Room #02"
+                name="Erick Oh"
+                title="Animator & Indie Director, Pixar">
+                Seeing World through Moving Images
+              </Speaker>
+              <Speaker
+                group="Group G"
+                location="Room #03"
+                name="Nuri Kim"
+                title="Program Manager, Google">
+                Apple<sup>Google</sup> & Google<sup>[x]</sup>
+              </Speaker>
+            </div>
+
+            <h2 className="k-night-subtitle">Session 2</h2>
+            <div className="row">
+              <Speaker
+                group="Group A"
+                location="Main Ballroom"
+                name="Troy Malone"
+                title="General Manager of APAC, Evernote">
+                Going Global by Going Local - Evernote's Story
+              </Speaker>
+              <Speaker
+                group="Group B"
+                location="Room #01"
+                name="Young Joon Cha"
+                title="CEO, OnDemandKorea">
+                Exploring the Future of Online Video Platform
+              </Speaker>
+              <Speaker
+                group="Group F"
+                location="Room #02"
+                name="Hidenori Shikata"
+                title="Software Architect, GE Healthcare">
+                Advanced Feature Extraction in Medical Image
+              </Speaker>
+              <Speaker
+                group="Special"
+                location="Room #03"
+                title="Working in USA">
+                Mentoring Session for International Students from Korea
+              </Speaker>
+            </div>
           </section>
 
           <section className="k-night-section k-night-section--sponsors">
