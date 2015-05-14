@@ -111,7 +111,7 @@ export default React.createClass({
               <Speaker
                 group="Group G"
                 location="Room #03"
-                name="Nuri Kim"
+                name="Noori Kim"
                 title="Program Manager, Google">
                 Apple<sup>Google</sup> & Google<sup>[x]</sup>
               </Speaker>
