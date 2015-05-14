@@ -53,15 +53,39 @@ export default React.createClass({
               </tr>
               <tr>
                 <td className="time">6:30pm - 7:30pm</td>
-                <td className="event">Keynote (dinner served)</td>
+                <td className="event">Dinner</td>
               </tr>
               <tr>
-                <td className="time">7:30pm - 9:30pm</td>
-                <td className="event">Session Breakout</td>
+                <td className="time">7:15pm - 7:30pm</td>
+                <td className="event">ESKAPE Performance</td>
               </tr>
               <tr>
-                <td className="time">9:30pm - 10:30pm</td>
-                <td className="event">Reception & Raffle (drinks served)</td>
+                <td className="time">7:30pm - 8:15pm</td>
+                <td className="event">Keynote</td>
+              </tr>
+              <tr>
+                <td className="time">8:15pm - 8:25pm</td>
+                <td className="event">Break</td>
+              </tr>
+              <tr>
+                <td className="time">8:25pm - 9:05pm</td>
+                <td className="event">Session 1</td>
+              </tr>
+              <tr>
+                <td className="time">9:05pm - 8:15pm</td>
+                <td className="event">Break</td>
+              </tr>
+              <tr>
+                <td className="time">9:15pm - 9:55pm</td>
+                <td className="event">Session 2</td>
+              </tr>
+              <tr>
+                <td className="time">9:55pm - 10:05pm</td>
+                <td className="event">Break</td>
+              </tr>
+              <tr>
+                <td className="time">10:05pm - 10:30pm</td>
+                <td className="event">Reception & Raffle</td>
               </tr>
             </table>
           </section>
