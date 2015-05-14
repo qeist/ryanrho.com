@@ -231,6 +231,11 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   text-align: center;
   height: 300px;
 
+  @media screen and (max-width: $small-screen-size) {
+    font-size: 14px;
+    height: auto;
+  }
+
   .job-title {
     font-size: 17px;
 
@@ -240,17 +245,29 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   }
 
   .group {
-    display: inline;
-    background-color: $blue;
-    border-radius: 14px;
-    padding: 3px 7px;
-    color: $white;
+    color: $blue;
+    font-weight: 200;
+    font-size: 15px;
   }
 
   .topic {
-    line-height: 30px;
-    width: 300px;
+    line-height: 35px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 200;
+
+    @media screen and (max-width: $small-screen-size) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 250px;
+    }
+  }
+
+  .name {
+    @media screen and (max-width: $small-screen-size) {
+      font-size: 25px;
+      line-height: 30px;
+    }
   }
 }
