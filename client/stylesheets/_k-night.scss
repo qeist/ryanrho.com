@@ -19,10 +19,15 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
 }
 
 .k-night-header {
-  background-color: #303136;
+  background-color: rgb(49, 50, 55);
   text-align: center;
 
   padding-top: 100px;
+
+  background-image: url("/knight2015/background.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
 .k-night-header__container {
@@ -136,7 +141,7 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
     padding-bottom: 15px;
 
     @media screen and (max-width: $small-screen-size) {
-      font-size: 16px;
+      font-size: 18px;
       padding-bottom: 15px;
     }
   }
