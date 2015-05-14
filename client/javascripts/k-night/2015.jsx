@@ -24,7 +24,14 @@ export default React.createClass({
             </h1>
           </section>
           <section className="k-night-header__location margin-large--bottom">
-            <div className="margin-tiny--bottom">Thursday, May 28 | 6:00 <small>pm</small> - 10:30 <small>pm</small></div>
+            <div>
+              <div className="date margin-tiny--bottom">
+                Thursday, May 28
+              </div>
+              <div className="time margin-tiny--bottom">
+                6:00 <small>pm</small> - 10:30 <small>pm</small>
+              </div>
+            </div>
             <div>Biltmore Hotel and Suites</div>
           </section>
           <section className="padding-huge--bottom">

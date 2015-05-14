@@ -59,6 +59,33 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
   small {
     font-size: 15px;
   }
+
+  .date {
+    display: inline;
+
+    @media screen and (max-width: $small-screen-size) {
+      display: block;
+    }
+
+    &:after {
+      content: "|";
+      margin: 0 8px;
+
+      @media screen and (max-width: $small-screen-size) {
+        content: "";
+        margin: 0;
+      }
+    }
+  }
+
+  .time {
+
+    display: inline;
+
+    @media screen and (max-width: $small-screen-size) {
+      display: block;
+    }
+  }
 }
 
 .k-night-header__rsvp-button {
