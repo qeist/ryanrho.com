@@ -21,6 +21,7 @@ export default React.createClass({
           <body>
             <div id="app" dangerouslySetInnerHTML={{__html: this.props.markup}} />
           </body>
+          <script src="https://maps.googleapis.com/maps/api/js?v=3.exp" />
           <script src="/script.js"/>
         </head>
       </html>

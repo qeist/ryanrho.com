@@ -1,6 +1,9 @@
 'use strict';
 
 import React from 'react';
+import {GoogleMaps, Marker} from 'react-google-maps';
+
+const coordinate = {lat: 37.383708, lng: -121.961887};
 
 export default React.createClass({
 
@@ -79,33 +82,26 @@ export default React.createClass({
             </h1>
 
             <div className="flexbox k-night-section--location__item">
-              <div className="flex--one">
+              <div className="flex--one margin--ends">
                 <h2 className="k-night-location-title no-margin margin--bottom">Biltmore Hotel and Suites</h2>
-                <div>
-                  <div className="flexbox">
-                    <div className="flex--one" />
-                    <div className="flexbox flex--one">
-                      <div className="color--blue padding-small--right">Address</div>
-                      <address className="flex--one">
-                        2151 Laurelwood Rd,<br />
-                        Santa Clara, CA 950549
-                      </address>
-                    </div>
-                    <div className="flex--one" />
-                  </div>
-
-                  <div className="flexbox">
-                    <div className="flex--one" />
-                    <div className="flexbox flex--one">
-                      <div className="info-label color--blue padding-small--right">Phone</div>
-                      <div className="info-label flex--one">(800) 255-9925</div>
-                    </div>
-                    <div className="flex--one" />
-                  </div>
+                <div className="address-phone">
+                  <address>
+                    <a href="http://maps.apple.com/?q=2151+Laurelwood+Rd,+Santa Clara,+CA+950549">
+                      2151 Laurelwood Rd,<br />
+                      Santa Clara, CA 950549
+                    </a>
+                  </address>
+                  <div>(800) 255-9925</div>
                 </div>
               </div>
-              <div className="flex--one">
-                {/*map goes here*/}
+              <div className="flex--one padding--sides">
+                <GoogleMaps containerProps={{style: {width: '100%', height: 250}}}
+                            googleMapsApi={"undefined" !== typeof google ? google.maps : null}
+                            zoom={15}
+                            center={coordinate}
+                            disableDefaultUI={true}>
+                  <Marker position={coordinate} />
+                </GoogleMaps>
               </div>
             </div>
           </footer>
