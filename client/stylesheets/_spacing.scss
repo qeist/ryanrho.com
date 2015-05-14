@@ -84,6 +84,10 @@ $spacing-huge: $spacing * 2;
   margin-right: $spacing-small;
 }
 
+.margin-tiny--bottom {
+  margin-bottom: $spacing-tiny;
+}
+
 .margin--bottom {
   margin-bottom: $spacing;
 }

@@ -81,7 +81,38 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
 }
 
 .k-night-section--timetable {
+  table {
+    margin: 0 auto;
+  }
 
+  .time {
+    color: #717171;
+    font-family: $secondary-font-family;
+    font-size: 17px;
+    font-style: italic;
+    text-align: right;
+    width: 200px;
+    padding-bottom: 15px;
+
+    @media screen and (max-width: $small-screen-size) {
+      width: 120px;
+      font-size: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  .event {
+    padding-left: 20px;
+    color: $black;
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 15px;
+
+    @media screen and (max-width: $small-screen-size) {
+      font-size: 16px;
+      padding-bottom: 15px;
+    }
+  }
 }
 
 .k-night-section--speakers {

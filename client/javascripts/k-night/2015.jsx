@@ -24,7 +24,7 @@ export default React.createClass({
             </h1>
           </section>
           <section className="k-night-header__location margin-large--bottom">
-            <div>Thursday, May 28 | 6:00 <small>pm</small> - 10:30 <small>pm</small></div>
+            <div className="margin-tiny--bottom">Thursday, May 28 | 6:00 <small>pm</small> - 10:30 <small>pm</small></div>
             <div>Biltmore Hotel and Suites</div>
           </section>
           <section className="padding-huge--bottom">
@@ -38,6 +38,24 @@ export default React.createClass({
               <i className="k-night-title-icon fa fa-calendar" />
               Timetable
             </h1>
+            <table>
+              <tr>
+                <td className="time">6:00pm - 6:30pm</td>
+                <td className="event">Registration & Networking</td>
+              </tr>
+              <tr>
+                <td className="time">6:30pm - 7:30pm</td>
+                <td className="event">Keynote (dinner served)</td>
+              </tr>
+              <tr>
+                <td className="time">7:30pm - 9:30pm</td>
+                <td className="event">Session Breakout</td>
+              </tr>
+              <tr>
+                <td className="time">9:30pm - 10:30pm</td>
+                <td className="event">Reception & Raffle (drinks served)</td>
+              </tr>
+            </table>
           </section>
 
           <section className="k-night-section k-night-section--speakers">
