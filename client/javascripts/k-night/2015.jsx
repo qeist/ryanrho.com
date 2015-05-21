@@ -180,22 +180,30 @@ export default React.createClass({
             </h1>
             <div className="k-night-sponsors__container margin--bottom">
               <div className="k-night-sponsors__container__item flexbox flexbox--center">
-                <div className="flex--one text--center margin--bottom">
+                <div className="flex--one text--center margin-large--bottom">
+                  <img src="/knight2015/samsung.png" />
+                </div>
+                <div className="flex--one text--center margin-large--bottom">
                   <img src="/knight2015/lg.png" />
                 </div>
-                <div className="flex--one text--center margin--bottom">
-                  <img src="/knight2015/kotra.png" />
-                </div>
-                <div className="flex--one text--center margin--bottom">
+                <div className="flex--one text--center margin-large--bottom">
                   <img src="/knight2015/sktelecom.png" />
                 </div>
               </div>
               <div className="k-night-sponsors__container__item flexbox flexbox--center">
-                <div className="flex--one text--center margin--bottom">
-                  <img src="/knight2015/samsung.png" />
+                <div className="flex--one text--center margin-large--bottom">
+                  <img src="/knight2015/simmtech.png" />
                 </div>
-                <div className="flex--one text--center margin--bottom">
+                <div className="flex--one text--center margin-large--bottom">
                   <img src="/knight2015/asiana.png" />
+                </div>
+              </div>
+              <div className="k-night-sponsors__container__item flexbox flexbox--center">
+                <div className="flex--one text--center margin-large--bottom">
+                  <img src="/knight2015/kotra.png" />
+                </div>
+                <div className="flex--one text--center margin-large--bottom">
+                  <img src="/knight2015/ministry-of-foreign-affairs.png" />
                 </div>
               </div>
             </div>
