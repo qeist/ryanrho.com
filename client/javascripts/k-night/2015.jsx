@@ -113,28 +113,28 @@ export default React.createClass({
             <div className="row">
               <Speaker
                 group="Group C/E"
-                location="Main Ballroom"
+                location="Monterey/Carmel Room"
                 name="Jae Cho"
                 title="Corporate VP, Xilinx">
                 Semiconductor Industry Operation: History and Successful Model
               </Speaker>
               <Speaker
                 group="Group U"
-                location="Room #01"
+                location="Santa Clara Room"
                 name="Reagan Kim"
                 title="Visual Designer, Google">
                 How to Design for the World
               </Speaker>
               <Speaker
                 group="Group V"
-                location="Room #02"
+                location="Tiburon Room"
                 name="Erick Oh"
                 title="Animator & Indie Director, Pixar">
                 Seeing World through Moving Images
               </Speaker>
               <Speaker
                 group="Group G"
-                location="Room #03"
+                location="San Jose Room"
                 name="Noori Kim"
                 title="Program Manager, Google">
                 Apple<sup>Google</sup> & Google<sup>[x]</sup>
@@ -145,28 +145,28 @@ export default React.createClass({
             <div className="row">
               <Speaker
                 group="Group A"
-                location="Main Ballroom"
+                location="San Jose Room"
                 name="Troy Malone"
                 title="General Manager of APAC, Evernote">
                 Going Global by Going Local - Evernote's Story
               </Speaker>
               <Speaker
                 group="Group B"
-                location="Room #01"
+                location="Monterey/Carmel Room"
                 name="Young Joon Cha"
                 title="CEO, OnDemandKorea">
                 Exploring the Future of Online Video Platform
               </Speaker>
               <Speaker
                 group="Group F"
-                location="Room #02"
+                location="Tiburon Room"
                 name="Hidenori Shikata"
                 title="Software Architect, GE Healthcare">
                 Advanced Feature Extraction in Medical Image
               </Speaker>
               <Speaker
                 group="Special"
-                location="Room #03"
+                location="Santa Clara Room"
                 title="Working in USA">
                 Mentoring Session for International Students from Korea
               </Speaker>
