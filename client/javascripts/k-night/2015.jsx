@@ -48,43 +48,43 @@ export default React.createClass({
             </h1>
             <table>
               <tr>
-                <td className="time">6:00pm - 6:30pm</td>
+                <td className="time">6:00 pm - 6:30 pm</td>
                 <td className="event">Registration & Networking</td>
               </tr>
               <tr>
-                <td className="time">6:30pm - 7:30pm</td>
+                <td className="time">6:30 pm - 7:30 pm</td>
                 <td className="event">Dinner</td>
               </tr>
               <tr>
-                <td className="time">7:15pm - 7:30pm</td>
+                <td className="time">7:15 pm - 7:30 pm</td>
                 <td className="event">ESKAPE Performance</td>
               </tr>
               <tr>
-                <td className="time">7:30pm - 8:15pm</td>
+                <td className="time">7:30 pm - 8:15 pm</td>
                 <td className="event">Keynote</td>
               </tr>
               <tr>
-                <td className="time">8:15pm - 8:25pm</td>
+                <td className="time">8:15 pm - 8:25 pm</td>
                 <td className="event">Break</td>
               </tr>
               <tr>
-                <td className="time">8:25pm - 9:05pm</td>
+                <td className="time">8:25 pm - 9:05 pm</td>
                 <td className="event">Session 1</td>
               </tr>
               <tr>
-                <td className="time">9:05pm - 8:15pm</td>
+                <td className="time">9:05 pm - 9:15 pm</td>
                 <td className="event">Break</td>
               </tr>
               <tr>
-                <td className="time">9:15pm - 9:55pm</td>
+                <td className="time">9:15 pm - 9:55 pm</td>
                 <td className="event">Session 2</td>
               </tr>
               <tr>
-                <td className="time">9:55pm - 10:05pm</td>
+                <td className="time">9:55 pm - 10:05 pm</td>
                 <td className="event">Break</td>
               </tr>
               <tr>
-                <td className="time">10:05pm - 10:30pm</td>
+                <td className="time">10:05 pm - 10:30 pm</td>
                 <td className="event">Reception & Raffle</td>
               </tr>
             </table>
