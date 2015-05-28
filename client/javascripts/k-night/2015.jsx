@@ -216,7 +216,7 @@ export default React.createClass({
             </h1>
 
             <div className="flexbox k-night-section--location__item">
-              <div className="flex--one margin--ends">
+              <div className="flex--one margin--bottom">
                 <h2 className="k-night-location-title no-margin margin--bottom">Biltmore Hotel and Suites</h2>
                 <div className="address-phone">
                   <address>
@@ -228,11 +228,12 @@ export default React.createClass({
                   <div>(800) 255-9925</div>
                 </div>
               </div>
-              <div className="flex--one margin--ends">
+              <div className="flex--one margin--bottom">
                 <h2 className="k-night-location-title no-margin margin--bottom">Parking</h2>
                 <div className="address-phone">
                   <address>
                     <a href="http://maps.apple.com/?q=2121+Laurelwood+Rd,+Santa Clara,+CA+95054">
+                      ACO Furniture<br />
                       2121 Laurelwood Rd,<br />
                       Santa Clara, CA 95054
                     </a>
