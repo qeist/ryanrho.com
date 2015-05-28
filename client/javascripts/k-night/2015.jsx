@@ -220,12 +220,23 @@ export default React.createClass({
                 <h2 className="k-night-location-title no-margin margin--bottom">Biltmore Hotel and Suites</h2>
                 <div className="address-phone">
                   <address>
-                    <a href="http://maps.apple.com/?q=2151+Laurelwood+Rd,+Santa Clara,+CA+950549">
+                    <a href="http://maps.apple.com/?q=2151+Laurelwood+Rd,+Santa Clara,+CA+95054">
                       2151 Laurelwood Rd,<br />
-                      Santa Clara, CA 950549
+                      Santa Clara, CA 95054
                     </a>
                   </address>
                   <div>(800) 255-9925</div>
+                </div>
+              </div>
+              <div className="flex--one margin--ends">
+                <h2 className="k-night-location-title no-margin margin--bottom">Parking</h2>
+                <div className="address-phone">
+                  <address>
+                    <a href="http://maps.apple.com/?q=2121+Laurelwood+Rd,+Santa Clara,+CA+95054">
+                      2121 Laurelwood Rd,<br />
+                      Santa Clara, CA 95054
+                    </a>
+                  </address>
                 </div>
               </div>
               <div className="flex--one padding--sides">
