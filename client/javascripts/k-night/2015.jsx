@@ -116,7 +116,7 @@ export default React.createClass({
                 location="Monterey/Carmel Room"
                 name="Jae Cho"
                 title="Corporate VP, Xilinx">
-                Semiconductor Industry Operation: History and Successful Model
+                Hardware Acceleration into the New Technology World - History and Trend of Programmable Device
               </Speaker>
               <Speaker
                 group="Group U"
