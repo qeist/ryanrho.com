@@ -171,6 +171,14 @@ export default React.createClass({
                 Mentoring Session for International Students from Korea
               </Speaker>
             </div>
+
+            <h2 className="k-night-subtitle margin--bottom">Rooms</h2>
+
+            <div className="text--center">
+              <a href="/knight2015/rooms.jpg">
+                <img className="room-info" src="/knight2015/rooms.jpg" />
+              </a>
+            </div>
           </section>
 
           <section className="k-night-section k-night-section--sponsors">

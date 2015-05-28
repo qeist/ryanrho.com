@@ -164,6 +164,16 @@ $secondary-font-family: 'Georgia', 'Times New Roman';
 
 .k-night-section--speakers {
   background-color: #f7f7f7;
+
+  .room-info {
+    width: 500px;
+  }
+
+  @media screen and (max-width: $small-screen-size) {
+    .room-info {
+      width: 100%;
+    }
+  }
 }
 
 .k-night-section--location {
